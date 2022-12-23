@@ -30,6 +30,7 @@
                 android:value="" />
         </activity>
         <activity android:name=".webview.WebViewActivity"/>
+        <activity android:name=".game.PlayActivity"/>
     </application>
 
 </manifest>
