@@ -1,17 +1,12 @@
 package nataliia.semenova.examgame;
 
-import static android.service.controls.ControlsProviderService.TAG;
-
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Context;
 import android.content.Intent;
 import android.net.ConnectivityManager;
-import android.net.Network;
-import android.net.NetworkCapabilities;
 import android.net.NetworkInfo;
 import android.os.Bundle;
-import android.util.Log;
 
 import java.net.NetworkInterface;
 import java.net.SocketException;
