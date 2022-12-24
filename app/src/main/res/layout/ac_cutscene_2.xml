@@ -6,9 +6,8 @@
     android:layout_height="match_parent"
     android:orientation="horizontal"
     android:background="@drawable/background">
-
     <ImageButton
-        android:id="@+id/ib_next"
+        android:id="@+id/ib_next_1"
         android:layout_width="100dp"
         android:layout_height="80dp"
         android:background="@drawable/next_button"
@@ -27,5 +26,4 @@
         android:text="One day alone student had to pass an exam with ewa dawf waf we fwae faw fawef aew awe fawe a wfew"
         android:textColor="@color/black"
         android:textSize="20sp"/>
-
 </androidx.constraintlayout.widget.ConstraintLayout>

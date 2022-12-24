@@ -19,5 +19,9 @@ public class PlayActivity extends AppCompatActivity {
             Intent intent = new Intent(PlayActivity.this, CutScene1Activity.class);
             startActivity(intent);
         });
+
+        findViewById(R.id.ib_exit).setOnClickListener(view -> {
+            onBackPressed();
+        });
     }
 }

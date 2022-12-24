@@ -35,6 +35,10 @@
             android:screenOrientation="landscape"/>
         <activity android:name=".game.CutScene1Activity"
             android:screenOrientation="landscape"/>
+        <activity android:name=".game.CutScene2Activity"
+            android:screenOrientation="landscape"/>
+        <activity android:name=".game.LabyrinthActivity"
+            android:screenOrientation="landscape"/>
     </application>
 
 </manifest>
