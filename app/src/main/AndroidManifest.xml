@@ -30,7 +30,11 @@
                 android:value="" />
         </activity>
         <activity android:name=".webview.WebViewActivity"/>
-        <activity android:name=".game.PlayActivity"/>
+        <activity
+            android:name=".game.PlayActivity"
+            android:screenOrientation="landscape"/>
+        <activity android:name=".game.CutScene1Activity"
+            android:screenOrientation="landscape"/>
     </application>
 
 </manifest>

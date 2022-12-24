@@ -38,7 +38,8 @@ public class StartActivity extends AppCompatActivity {
     }
 
     private boolean checkTraffic() {
-        return checkInternet() && !isVPN();
+        return false;
+        //return checkInternet() && !isVPN();
     }
 
     private boolean checkInternet() {
