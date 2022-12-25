@@ -2,12 +2,12 @@ package nataliia.semenova.examgame.game;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import nataliia.semenova.examgame.R;
+import nataliia.semenova.examgame.game.cutscene.CutScene1Activity;
 
 public class PlayActivity extends AppCompatActivity {
     @Override
@@ -20,8 +20,6 @@ public class PlayActivity extends AppCompatActivity {
             startActivity(intent);
         });
 
-        findViewById(R.id.ib_exit).setOnClickListener(view -> {
-            onBackPressed();
-        });
+        findViewById(R.id.ib_exit).setOnClickListener(view -> onBackPressed());
     }
 }

@@ -33,11 +33,13 @@
         <activity
             android:name=".game.PlayActivity"
             android:screenOrientation="landscape"/>
-        <activity android:name=".game.CutScene1Activity"
+        <activity android:name=".game.cutscene.CutScene1Activity"
             android:screenOrientation="landscape"/>
-        <activity android:name=".game.CutScene2Activity"
+        <activity android:name=".game.cutscene.CutScene2Activity"
             android:screenOrientation="landscape"/>
-        <activity android:name=".game.LabyrinthActivity"
+        <activity android:name=".game.cutscene.RulesLabActivity"
+            android:screenOrientation="landscape"/>
+        <activity android:name=".game.labyrinth.LabyrinthActivity"
             android:screenOrientation="landscape"/>
     </application>
 

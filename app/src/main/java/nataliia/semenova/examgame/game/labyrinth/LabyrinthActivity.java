@@ -1,19 +1,23 @@
-package nataliia.semenova.examgame.game;
+package nataliia.semenova.examgame.game.labyrinth;
 
 import android.os.Bundle;
+import android.view.WindowManager;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
-
-import nataliia.semenova.examgame.game.model.LabyrinthView;
 
 public class LabyrinthActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
+                WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(new LabyrinthView(this));
     }
 
-
+    @Override
+    public void onBackPressed() {
+        // super.onBackPressed();
+    }
 }

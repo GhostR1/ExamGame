@@ -2,38 +2,40 @@
 <androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="horizontal"
     android:background="@drawable/background">
     <ImageButton
-        android:id="@+id/ib_next_1"
+        android:id="@+id/ib_next"
         android:layout_width="100dp"
         android:layout_height="80dp"
         android:background="@drawable/next_button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@drawable/professors"
-        app:layout_constraintBottom_toTopOf="@+id/tv_story"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
     <TextView
         android:id="@+id/tv_story"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:paddingHorizontal="20dp"
+        android:paddingVertical="20dp"
+        android:text="@string/rules"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="170dp"
+        android:background="@drawable/screen_labyrinth"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.74"
         app:layout_constraintStart_toStartOf="parent"
-        android:paddingHorizontal="50dp"
-        android:paddingVertical="20dp"
-        android:background="@color/white"
-        android:text="@string/professors_cutscene"
-        android:textColor="@color/black"
-        android:textSize="20sp"/>
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.141" />
 </androidx.constraintlayout.widget.ConstraintLayout>
