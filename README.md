@@ -37,20 +37,14 @@ To get a local copy up and running follow these simple example steps.
 
 ### Installation
 
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
+Download:
    ```sh
-   git clone https://github.com/github_username/repo_name.git
+   git clone https://github.com/GhostR1/ExamGame.git
    ```
-3. Install NPM packages
-   ```sh
-   npm install
-   ```
-4. Enter your API in `config.js`
-   ```js
-   const API_KEY = 'ENTER YOUR API';
-   ```
+Import Project by Android Studio Menu > File > Import Project...
 
+Run ExamGame by Android Studio Menu > Run > Run ExamGame.
+If some issues are happened, try "Sync Project with Gradle Files" or "Rebuild Project" at Android Studio Menu
 
 
 <!-- CONTACT -->
