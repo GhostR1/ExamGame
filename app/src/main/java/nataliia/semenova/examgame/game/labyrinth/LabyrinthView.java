@@ -21,6 +21,7 @@ import java.util.Locale;
 
 import nataliia.semenova.examgame.R;
 import nataliia.semenova.examgame.game.PlayActivity;
+import nataliia.semenova.examgame.game.WheelOfFortuneActivity;
 
 public class LabyrinthView extends View {
     private LabyrinthDraw labyrinthDraw;
@@ -172,7 +173,8 @@ public class LabyrinthView extends View {
 
             @Override
             public void onFinish() {
-                Intent intent = new Intent(context, PlayActivity.class);
+                Intent intent = new Intent(context, WheelOfFortuneActivity.class);
+                intent.putExtra("score", count);
                 context.startActivity(intent);
             }
         }.start();

@@ -41,6 +41,10 @@
             android:screenOrientation="landscape"/>
         <activity android:name=".game.labyrinth.LabyrinthActivity"
             android:screenOrientation="landscape"/>
+        <activity android:name=".game.WheelOfFortuneActivity"
+            android:screenOrientation="landscape"/>
+        <activity android:name=".game.FinalActivity"
+            android:screenOrientation="landscape"/>
     </application>
 
 </manifest>

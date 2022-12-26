@@ -3,4 +3,7 @@
     <string name="student_cutscene">Once, in the first among the best universities, a lone student had to defend a course project…</string>
     <string name="professors_cutscene">But this test was impossible to pass without facing ruthless professors. For the most part, success and marks depended on the mood of the teachers…</string>
     <string name="rules">The teacher sent the student for pastry and gave him only 30 seconds… Whether the student can defend his course project depends on these 30 seconds.The more pastry the student collects, the higher the probability of passing.\nIf you are ready, then start!</string>
+    <string name="passed">Passed</string>
+    <string name="retaking">You are going to retaking!</string>
+    <string name="passed_congrats">Congratulations! You passed!</string>
 </resources>
