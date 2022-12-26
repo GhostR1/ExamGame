@@ -45,6 +45,7 @@ public class LabyrinthView extends View {
         startTimer();
     }
 
+    // Getting size for correct displaying of the field on any device
     private Point getDisplaySize() {
         Display display = context.getWindowManager().getDefaultDisplay();
         Point size = new Point();
@@ -87,9 +88,7 @@ public class LabyrinthView extends View {
         ));
         ibLeft.setX(0);
         ibLeft.setY(displaySize.y - 480);
-        ibLeft.setOnClickListener(view -> {
-            moveLeft(canvas);
-        });
+        ibLeft.setOnClickListener(view -> moveLeft(canvas));
         context.addContentView(ibLeft, layoutParams);
 
         ImageButton ibRight = new ImageButton(context);
@@ -98,9 +97,7 @@ public class LabyrinthView extends View {
         ));
         ibRight.setX(320);
         ibRight.setY(displaySize.y - 480);
-        ibRight.setOnClickListener(view -> {
-            moveRight(canvas);
-        });
+        ibRight.setOnClickListener(view -> moveRight(canvas));
         context.addContentView(ibRight, layoutParams);
 
         ImageButton ibUp = new ImageButton(context);
@@ -109,9 +106,7 @@ public class LabyrinthView extends View {
         ));
         ibUp.setX(160);
         ibUp.setY(displaySize.y - 640);
-        ibUp.setOnClickListener(view -> {
-            moveUp(canvas);
-        });
+        ibUp.setOnClickListener(view -> moveUp(canvas));
         context.addContentView(ibUp, layoutParams);
 
         ImageButton ibDown = new ImageButton(context);
@@ -120,9 +115,7 @@ public class LabyrinthView extends View {
         ));
         ibDown.setX(160);
         ibDown.setY(displaySize.y - 320);
-        ibDown.setOnClickListener(view -> {
-            moveDown(canvas);
-        });
+        ibDown.setOnClickListener(view -> moveDown(canvas));
         context.addContentView(ibDown, layoutParams);
     }
 

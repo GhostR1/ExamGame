@@ -37,15 +37,16 @@ public class WheelOfFortuneActivity extends AppCompatActivity {
         });
     }
 
+    // Animation of fast switching a result
     private void startAnimation() {
         new CountDownTimer(3000, 100) {
             @Override
             public void onTick(long l) {
                 if(isPassed) {
-                    tvResult.setText("Passed!");
+                    tvResult.setText(R.string.passed);
                     tvResult.setTextColor(Color.GREEN);
                 } else {
-                    tvResult.setText("Failed");
+                    tvResult.setText(R.string.failed);
                     tvResult.setTextColor(Color.RED);
                 }
                 isPassed = !isPassed;
@@ -55,10 +56,10 @@ public class WheelOfFortuneActivity extends AppCompatActivity {
             public void onFinish() {
                 isPassed = getResult();
                 if(isPassed) {
-                    tvResult.setText("Passed!");
+                    tvResult.setText(R.string.passed);
                     tvResult.setTextColor(Color.GREEN);
                 } else {
-                    tvResult.setText("Failed");
+                    tvResult.setText(R.string.failed);
                     tvResult.setTextColor(Color.RED);
                 }
                 try {
@@ -74,6 +75,7 @@ public class WheelOfFortuneActivity extends AppCompatActivity {
         }.start();
     }
 
+    // Result depends on count of pastry player collected
     private boolean getResult() {
         double random = Math.floor(Math.random() * 100) + 1;
         return random <= probability * 100 && random > (1 - probability) * 100;
@@ -90,6 +92,7 @@ public class WheelOfFortuneActivity extends AppCompatActivity {
 
     @Override
     public void onBackPressed() {
+        // Commented for disable backPressed action
         // super.onBackPressed();
     }
 }

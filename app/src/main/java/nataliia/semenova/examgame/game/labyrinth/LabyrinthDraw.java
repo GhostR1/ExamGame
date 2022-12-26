@@ -25,6 +25,7 @@ public class LabyrinthDraw {
         drawRect.set(0, 0, screenWidth / xCellCountOnScreen, screenHeight / yCellCountOnScreen);
     }
 
+    // Drawing cell to cell depending on game field
     public void drawLabyrinth(Canvas canvas, float viewX, float viewY){
         int xCell;
         float xCoord;

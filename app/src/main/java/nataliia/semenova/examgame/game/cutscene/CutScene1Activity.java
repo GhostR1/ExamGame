@@ -34,6 +34,7 @@ public class CutScene1Activity extends AppCompatActivity {
 
     @Override
     public void onBackPressed() {
+        // Commented for disable backPressed action
         // super.onBackPressed();
     }
 }

@@ -24,6 +24,7 @@ public class WebViewActivity extends AppCompatActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.ac_webview);
+
         webView = findViewById(R.id.wv_page);
         webSettings = webView.getSettings();
         setSettings();
@@ -58,12 +59,12 @@ public class WebViewActivity extends AppCompatActivity {
 
             @Override
             public void onPageStarted(WebView view, String url, Bitmap favicon) {
-                ((ProgressBar)findViewById(R.id.progress_bar)).setVisibility(View.VISIBLE);
+                findViewById(R.id.progress_bar).setVisibility(View.VISIBLE);
             }
 
             @Override
             public void onPageFinished(WebView view, String url) {
-                ((ProgressBar)findViewById(R.id.progress_bar)).setVisibility(View.GONE);
+                findViewById(R.id.progress_bar).setVisibility(View.GONE);
             }
         });
     }

@@ -38,10 +38,10 @@ public class StartActivity extends AppCompatActivity {
     }
 
     private boolean checkTraffic() {
-        return false;
-        //return checkInternet() && !isVPN();
+        return checkInternet() && !isVPN();
     }
 
+    // Checking if there is the Internet
     private boolean checkInternet() {
         ConnectivityManager connectivityManager =
                 (ConnectivityManager) this.getSystemService(Context.CONNECTIVITY_SERVICE);
@@ -49,6 +49,7 @@ public class StartActivity extends AppCompatActivity {
         return networkInfo != null && networkInfo.isConnected();
     }
 
+    // Checking if VPN turned on
     private boolean isVPN() {
         String iFace = "";
         try {

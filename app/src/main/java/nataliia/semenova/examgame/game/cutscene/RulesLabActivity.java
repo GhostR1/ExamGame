@@ -35,6 +35,7 @@ public class RulesLabActivity extends AppCompatActivity {
 
     @Override
     public void onBackPressed() {
+        // Commented for disable backPressed action
         // super.onBackPressed();
     }
 }
